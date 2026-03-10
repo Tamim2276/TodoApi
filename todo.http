@@ -1,0 +1,10 @@
+
+GET http://localhost:5207/todos
+
+###
+POST http://localhost:5207/todo
+Content-Type: application/json
+
+{
+    "title": "2. Second todo"
+}
