@@ -1,7 +1,7 @@
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddControllers();
 
 var app = builder.Build();
-
 ////
 ///////Minimal API
 // var todos = new List<Todo>
@@ -25,10 +25,13 @@ var app = builder.Build();
 //     return Results.Created($"/todos/${todos.Count -1}",todo);
 // });
 
+app.MapControllers();
+
+
 app.Run();
 
 
-class Todo
-{
-    public string? Title { get; set; }
-}
+// class Todo
+// {
+//     public string? Title { get; set; }
+// }

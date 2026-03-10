@@ -2,7 +2,7 @@
 GET http://localhost:5207/todos
 
 ###
-POST http://localhost:5207/todo
+POST http://localhost:5207/todos/create
 Content-Type: application/json
 
 {
